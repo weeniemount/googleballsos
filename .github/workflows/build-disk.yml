@@ -17,7 +17,7 @@ on:
           - arm64
   pull_request:
     branches:
-      - main
+      - master
     paths:
       - './disk_config/disk.toml'
       - './disk_config/iso.toml'
