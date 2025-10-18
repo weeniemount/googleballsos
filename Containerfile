@@ -26,6 +26,7 @@ RUN --mount=type=bind,from=ctx,source=/,target=/ctx \
     
 # copy my funny stuff over to the root partition
 COPY system_files/overrides/ /
+RUN gtk-update-icon-cache -f /usr/share/icons/hicolor
 
 ### LINTING
 ## Verify final image and contents are correct.
