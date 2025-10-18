@@ -15,11 +15,6 @@ dnf5 install -y fastfetch
 dnf5 install -y vlc
 dnf5 install -y gwenview
 
-curl -LO https://github.com/weeniemount/googleballs-app/releases/latest/download/Google.Balls.Desktop-electron.rpm
-rpm-ostree install ./Google.Balls.Desktop-electron.rpm
-rm -f Google.Balls.Desktop-electron.rpm
-
-
 # Use a COPR Example:
 #
 # dnf5 -y copr enable ublue-os/staging
