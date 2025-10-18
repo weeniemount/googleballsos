@@ -12,8 +12,7 @@ set -ouex pipefail
 # this installs a package from fedora repos
 dnf5 install -y tmux 
 dnf5 install -y fastfetch
-dnf5 install -y vlc
-dnf5 install -y gwenview
+dnf5 remove -y firefox
 
 # Use a COPR Example:
 #
