@@ -25,7 +25,7 @@ RUN --mount=type=bind,from=ctx,source=/,target=/ctx \
     /ctx/build.sh
     
 # copy my funny stuff over to the root partition
-COPY system_files/overrides /
+COPY system_files/overrides/ /
 
 ### LINTING
 ## Verify final image and contents are correct.
