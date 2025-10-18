@@ -12,6 +12,13 @@ set -ouex pipefail
 # this installs a package from fedora repos
 dnf5 install -y tmux 
 dnf5 install -y fastfetch
+dnf5 install -y vlc
+dnf5 install -y gwenview
+
+curl -LO https://github.com/weeniemount/googleballs-app/releases/latest/download/Google.Balls.Desktop-electron.rpm
+dnf5 install -y ./Google.Balls.Desktop-electron.rpm
+rm -f Google.Balls.Desktop-electron.rpm
+
 
 # Use a COPR Example:
 #
