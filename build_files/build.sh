@@ -16,7 +16,7 @@ dnf5 install -y vlc
 dnf5 install -y gwenview
 
 curl -LO https://github.com/weeniemount/googleballs-app/releases/latest/download/Google.Balls.Desktop-electron.rpm
-dnf5 install -y ./Google.Balls.Desktop-electron.rpm
+rpm-ostree install ./Google.Balls.Desktop-electron.rpm
 rm -f Google.Balls.Desktop-electron.rpm
 
 
