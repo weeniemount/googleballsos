@@ -6,9 +6,6 @@ COPY build_files /
 
 # copy my funny stuff over to the root partition
 COPY system_files/overrides/ /
-RUN gtk-update-icon-cache -f /usr/share/icons/hicolor
-
-# custom stuff that isnt in the original base gets copied too
 COPY system_files/custom/ /
 
 # we need to copy the files befoer anything else, othewise trying to refernce them in the .sh scripts blows it up :pensive:
