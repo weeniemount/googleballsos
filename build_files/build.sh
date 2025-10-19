@@ -25,3 +25,13 @@ dnf5 install -y feh ffplay pkill
 #### Example for enabling a System Unit File
 
 systemctl enable podman.socket
+
+# download google balls
+curl -L -o /tmp/gtk-app-linux-x64.tar.gz \
+  https://github.com/weeniemount/googleballs-app/releases/download/latest/gtk-app-linux-x64.tar.gz
+
+tar -xzf /tmp/gtk-app-linux-x64.tar.gz -C /usr/weenos/balls
+
+rm -f /usr/weenos/balls/README.txt
+
+rm -f /tmp/gtk-app-linux-x64.tar.gz
