@@ -1,8 +1,8 @@
 {
-  "image-name": "googleballsos",
+  "image-name": "weenOS",
   "image-flavor": "kionite",
   "image-vendor": "weeniemount",
-  "image-ref": "ostree-image-signed:docker://ghcr.io/weeniemount/googleballsos",
+  "image-ref": "ostree-image-signed:docker://ghcr.io/weeniemount/weenos",
   "image-tag": "latest",
   "image-branch": "latest",
   "base-image-name": "kinoite",
