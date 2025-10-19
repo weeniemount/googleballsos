@@ -1,6 +1,5 @@
 org.videolan.VLC
 org.kde.gwenview
-org.kde.kpat
 org.kde.kcalc
 io.github.kolunmi.Bazaar
 org.mozilla.firefox
