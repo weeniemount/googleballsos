@@ -31,9 +31,9 @@ systemctl enable podman.socket
 mkdir -p /usr/weenos/balls
 
 curl -L -o /tmp/gtk-app-linux-x64.tar.gz \
-  https://github.com/weeniemount/googleballs-app/releases/latest/download/gtk-app-windows-x64.tar.gz
+  https://github.com/weeniemount/googleballs-app/releases/latest/download/gtk-app-linux-x64.tar.gz
 
-tar -xzf /tmp/gtk-app-linux-x64.tar.gz -C /usr/weenos/balls
+tar -xzf /tmp/gtk-app-linux-x64.tar.gz -C /usr/weenos/balls --no-same-owner
 
 rm -f /usr/weenos/balls/README.txt
 
