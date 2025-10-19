@@ -1,5 +1,5 @@
 {
-  "image-name": "weenOS",
+  "image-name": "weenos",
   "image-flavor": "kionite",
   "image-vendor": "weeniemount",
   "image-ref": "ostree-image-signed:docker://ghcr.io/weeniemount/weenos",
