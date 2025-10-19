@@ -1,5 +1,5 @@
 NAME="weenOS"
-VERSION="42 (Kionite)"
+VERSION="42 (Kinoite)"
 RELEASE_TYPE=stable
 ID=fedora
 VERSION_ID=42
@@ -14,7 +14,7 @@ HOME_URL="https://github.com/weeniemount/weenos"
 DOCUMENTATION_URL="https://github.com/weeniemount/weenos"
 SUPPORT_URL="https://github.com/weeniemount/weenos/issues"
 BUG_REPORT_URL="https://github.com/weeniemount/weenos/issues"
-VARIANT="Kionite"
+VARIANT="Kinoite"
 VARIANT_ID=kde
 BUILD_ID="1.0.0"
 BOOTLOADER_NAME="weenOS 1.0.0"
