@@ -1,3 +1,12 @@
+# copy my funny stuff over to the root partition
+COPY system_files/overrides/ /
+RUN gtk-update-icon-cache -f /usr/share/icons/hicolor
+
+# custom stuff that isnt in the original base gets copied too
+COPY system_files/custom/ /
+
+# we need to copy the files befoer anything else, othewise trying to refernce them in the .sh scripts blows it up :pensive:
+
 # Allow build scripts to be referenced without being copied into the final image
 FROM scratch AS ctx
 COPY build_files /
@@ -23,13 +32,7 @@ RUN --mount=type=bind,from=ctx,source=/,target=/ctx \
     --mount=type=cache,dst=/var/log \
     --mount=type=tmpfs,dst=/tmp \
     /ctx/build.sh
-    
-# copy my funny stuff over to the root partition
-COPY system_files/overrides/ /
-RUN gtk-update-icon-cache -f /usr/share/icons/hicolor
 
-# custom stuff that isnt in the original base gets copied too
-COPY system_files/custom/ /
 
 ### LINTING
 ## Verify final image and contents are correct.
