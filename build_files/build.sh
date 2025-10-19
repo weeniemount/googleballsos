@@ -25,14 +25,3 @@ dnf5 install -y feh ffplay pkill
 #### Example for enabling a System Unit File
 
 systemctl enable podman.socket
-
-
-chmod +x /usr/job/job.sh
-#cd /usr/
-#mkdir local
-#cd local
-#mkdir bin
-#sudo ln -s /usr/job/job.sh /usr/local/bin/vim
-#sudo ln -s /usr/job/job.sh /usr/local/bin/vi
-#sudo ln -s /usr/job/job.sh /usr/local/bin/nvim
-#sudo ln -s /usr/job/job.sh /usr/local/bin/neovim
