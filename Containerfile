@@ -4,14 +4,15 @@
 FROM scratch AS ctx
 COPY build_files /
 
-# copy my funny stuff over to the root partition
-COPY system_files/overrides/ /
-COPY system_files/custom/ /
 
-# we need to copy the files befoer anything else, othewise trying to refernce them in the .sh scripts blows it up :pensive:
 
 # Base Image
 FROM ghcr.io/ublue-os/kinoite-main
+
+# we need to copy the files befoer anything else, othewise trying to refernce them in the .sh scripts blows it up :pensive:
+# copy my funny stuff over to the root partition
+COPY system_files/overrides/ /
+COPY system_files/custom/ /
 
 ## Other possible base images include:
 # FROM ghcr.io/ublue-os/bazzite:latest
