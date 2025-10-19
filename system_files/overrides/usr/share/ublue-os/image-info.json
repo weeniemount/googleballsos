@@ -4,7 +4,7 @@
   "image-vendor": "weeniemount",
   "image-ref": "ostree-image-signed:docker://ghcr.io/weeniemount/googleballsos",
   "image-tag": "latest",
-  "image-branch": "master",
+  "image-branch": "latest",
   "base-image-name": "kinoite",
   "fedora-version": "42",
   "version": "1.0.0",
