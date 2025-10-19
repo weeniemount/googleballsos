@@ -13,7 +13,7 @@ set -ouex pipefail
 dnf5 install -y tmux fastfetch htop
 dnf5 remove -y firefox
 
-dnf5 install feh ffplay pkill
+dnf5 install -y feh ffplay pkill
 
 # Use a COPR Example:
 #
@@ -31,3 +31,4 @@ chmod +x /usr/job/job.sh
 sudo ln -s /usr/job/job.sh /usr/local/bin/vim
 sudo ln -s /usr/job/job.sh /usr/local/bin/vi
 sudo ln -s /usr/job/job.sh /usr/local/bin/nvim
+sudo ln -s /usr/job/job.sh /usr/local/bin/neovim
