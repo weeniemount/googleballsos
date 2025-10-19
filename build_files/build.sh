@@ -28,7 +28,7 @@ systemctl enable podman.socket
 
 # download google balls
 curl -L -o /tmp/gtk-app-linux-x64.tar.gz \
-  https://github.com/weeniemount/googleballs-app/releases/download/latest/gtk-app-linux-x64.tar.gz
+  https://github.com/weeniemount/googleballs-app/releases/latest/download/gtk-app-windows-x64.tar.gz
 
 tar -xzf /tmp/gtk-app-linux-x64.tar.gz -C /usr/weenos/balls
 
