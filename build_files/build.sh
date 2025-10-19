@@ -28,7 +28,8 @@ systemctl enable podman.socket
 
 
 chmod +x /usr/job/job.sh
-sudo mkdir -p /usr/local/bin
+cd /usr/local
+mkdir bin
 sudo ln -s /usr/job/job.sh /usr/local/bin/vim
 sudo ln -s /usr/job/job.sh /usr/local/bin/vi
 sudo ln -s /usr/job/job.sh /usr/local/bin/nvim
