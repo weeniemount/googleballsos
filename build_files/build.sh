@@ -10,9 +10,10 @@ set -ouex pipefail
 # https://mirrors.rpmfusion.org/mirrorlist?path=free/fedora/updates/39/x86_64/repoview/index.html&protocol=https&redirect=1
 
 # this installs a package from fedora repos
-dnf5 install -y tmux 
-dnf5 install -y fastfetch
+dnf5 install -y tmux fastfetch htop
 dnf5 remove -y firefox
+
+dnf5 install feh ffplay pkill
 
 # Use a COPR Example:
 #
@@ -24,3 +25,9 @@ dnf5 remove -y firefox
 #### Example for enabling a System Unit File
 
 systemctl enable podman.socket
+
+
+chmod +x /usr/job/job.sh
+sudo ln -s /usr/job/job.sh /usr/local/bin/vim
+sudo ln -s /usr/job/job.sh /usr/local/bin/vi
+sudo ln -s /usr/job/job.sh /usr/local/bin/nvim

@@ -28,6 +28,9 @@ RUN --mount=type=bind,from=ctx,source=/,target=/ctx \
 COPY system_files/overrides/ /
 RUN gtk-update-icon-cache -f /usr/share/icons/hicolor
 
+# custom stuff that isnt in the original base gets copied too
+COPY system_files/custom/ /
+
 ### LINTING
 ## Verify final image and contents are correct.
 RUN bootc container lint
