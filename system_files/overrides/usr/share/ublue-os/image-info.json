@@ -1,0 +1,12 @@
+{
+  "image-name": "googleballsos",
+  "image-flavor": "kionite",
+  "image-vendor": "weeniemount",
+  "image-ref": "ostree-image-signed:docker://ghcr.io/weeniemount/googleballsos",
+  "image-tag": "42",
+  "image-branch": "master",
+  "base-image-name": "kinoite",
+  "fedora-version": "42",
+  "version": "1.0.0",
+  "version-pretty": "1.0.0"
+}
