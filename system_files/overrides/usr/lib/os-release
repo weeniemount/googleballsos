@@ -1,3 +1,4 @@
 BUILD_ID="1.0.0"
 BOOTLOADER_NAME="weenOS 1.0.0"
 IMAGE_ID="weenos-1.0.0"
+PRETTY_NAME="weenOS"
