@@ -4,8 +4,6 @@
 FROM scratch AS ctx
 COPY build_files /
 
-
-
 # Base Image
 FROM ghcr.io/ublue-os/kinoite-main
 
@@ -26,6 +24,8 @@ COPY system_files/custom/ /
 ### MODIFICATIONS
 ## make modifications desired in your image and install packages by modifying the build.sh script
 ## the following RUN directive does all the things required to run "build.sh" as recommended.
+
+RUN chmod +x /ctx/image-info.sh
 
 RUN --mount=type=bind,from=ctx,source=/,target=/ctx \
     --mount=type=cache,dst=/var/cache \
