@@ -74,7 +74,7 @@ immutability=1
 plugin=org.kde.plasma.icontasks
 
 [Containments][2][Applets][5][Configuration][General]
-launchers=applications:systemsettings.desktop,file:///var/lib/flatpak/app/io.github.kolunmi.Bazaar/current/active/export/share/applications/io.github.kolunmi.Bazaar.desktop,preferred://filemanager,preferred://browser
+launchers=preferred://filemanager,applications:org.kde.konsole.desktop,preferred://browser,applications:googleballs.desktop,file:///var/lib/flatpak/app/io.github.kolunmi.Bazaar/current/active/export/share/applications/io.github.kolunmi.Bazaar.desktop,applications:systemsettings.desktop
 
 [Containments][2][Applets][6]
 immutability=1
