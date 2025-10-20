@@ -9,12 +9,21 @@ if [ ! -f "$FLATPAK_LIST" ]; then
 fi
 
 echo "installing the optional weenOS flatpaks"
+spinner='|/-\'
 while IFS= read -r pkg; do
 	[ -z "$pkg" ] && continue
 	[[ "$pkg" =~ ^# ]] && continue
-	
-	echo "installing $pkg..."
-	flatpak install -y "$pkg"
+
+	echo -n "installing $pkg... "
+	flatpak install -y "$pkg" >/dev/null 2>&1 &
+	pid=$!
+
+	i=0
+	while kill -0 $pid 2>/dev/null; do
+		printf "\b${spinner:i++%${#spinner}:1}"
+		sleep 0.1
+	done
+	wait $pid
 done < "$FLATPAK_LIST"
 
 echo "done! enjoy your optimal weenOS experience"
