@@ -14,13 +14,13 @@ while IFS= read -r pkg; do
 	[ -z "$pkg" ] && continue
 	[[ "$pkg" =~ ^# ]] && continue
 
-	echo -n "installing $pkg... "
+	echo "installing $pkg"
 	flatpak install -y "$pkg" >/dev/null 2>&1 &
 	pid=$!
 
 	i=0
 	while kill -0 $pid 2>/dev/null; do
-		printf "\b${spinner:i++%${#spinner}:1}"
+		printf "\r${spinner:i++%${#spinner}:1}"
 		sleep 0.1
 	done
 	wait $pid
