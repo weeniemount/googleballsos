@@ -7,3 +7,5 @@ org.tuxpaint.Tuxpaint
 org.gtk.Gtk3theme.Breeze
 org.kde.elisa
 io.github.flattool.Warehouse
+org.kde.kpat
+uk.org.greenend.chiark.sgtatham.puzzles
