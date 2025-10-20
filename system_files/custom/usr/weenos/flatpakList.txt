@@ -9,3 +9,4 @@ org.kde.elisa
 io.github.flattool.Warehouse
 org.kde.kpat
 uk.org.greenend.chiark.sgtatham.puzzles
+net.sourceforge.ExtremeTuxRacer
