@@ -40,7 +40,7 @@ rm -f /tmp/gtk-app-linux-x64.tar.gz
 git clone https://github.com/wilversings/maxwell /usr/share/plasma/plasmoids/maxwell/
 
 # apply the le custom weenOS plymouth boot theme
-sudo plymouth-set-default-theme -R logo-slider
+sudo plymouth-set-default-theme logo-slider
 
-# and then forcefully rebuild initrd!!!!
-sudo dracut --regenerate-all -f
+# and then forcefully rebuild initrd!!!!... or not
+# sudo dracut --regenerate-all -f
