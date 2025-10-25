@@ -10,7 +10,7 @@ set -ouex pipefail
 # https://mirrors.rpmfusion.org/mirrorlist?path=free/fedora/updates/39/x86_64/repoview/index.html&protocol=https&redirect=1
 
 # this installs a package from fedora repos
-dnf5 install -y tmux fastfetch htop cowsay feh ffplay pkill plasma-workspace-x11
+dnf5 install -y tmux fastfetch htop cowsay feh ffplay pkill plasma-workspace-x11 distrobox
 dnf5 remove -y firefox
 
 # Use a COPR Example:
@@ -34,5 +34,7 @@ tar -xzf /tmp/gtk-app-linux-x64.tar.gz -C /usr/weenos/balls --no-same-owner
 rm -f /usr/weenos/balls/README.txt
 
 rm -f /tmp/gtk-app-linux-x64.tar.gz
+
+# maxwell!
 
 git clone https://github.com/wilversings/maxwell /usr/share/plasma/plasmoids/maxwell/
