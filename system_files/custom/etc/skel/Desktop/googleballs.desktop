@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Google Balls
+Comment=Google balls real!!!!!!!!!
+Exec=/usr/weenos/balls/launch.sh
+Icon=/usr/weenos/balls/balls.png
+Terminal=false
+Type=Application
+Categories=Game;
