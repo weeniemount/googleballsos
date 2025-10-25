@@ -1,0 +1,19 @@
+{
+    "KPackageStructure": "Plasma/Applet",
+    "KPlugin": {
+        "Authors": [
+            {
+                "Email": "weeniemount@garymail.org",
+                "Name": "weenie"
+            }
+        ],
+        "Category": "Graphics",
+        "Description": "Google balls on your KDE desktop real!!!!!!",
+        "Id": "com.weenie.googleballs",
+        "Name": "Google Balls",
+        "Version": "1.5.0",
+        "Website": "https://github.com/weeniemount/googleballs-app"
+    },
+    "X-Plasma-API": "declarativeappletscript",
+    "X-Plasma-API-Minimum-Version": "6.0"
+}
