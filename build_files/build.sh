@@ -34,3 +34,5 @@ tar -xzf /tmp/gtk-app-linux-x64.tar.gz -C /usr/weenos/balls --no-same-owner
 rm -f /usr/weenos/balls/README.txt
 
 rm -f /tmp/gtk-app-linux-x64.tar.gz
+
+git clone https://github.com/wilversings/maxwell /usr/share/plasma/plasmoids/com.wilversings.maxwell/
