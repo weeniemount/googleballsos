@@ -42,5 +42,6 @@ git clone https://github.com/wilversings/maxwell /usr/share/plasma/plasmoids/max
 # apply the le custom weenOS plymouth boot theme
 sudo plymouth-set-default-theme logo-slider
 
-# and then forcefully rebuild initrd!!!!... or not
-# sudo dracut --regenerate-all -f
+# and then forcefully rebuild initrd!!!!... maybe this one will work
+QUALIFIED_KERNEL="$(dnf5 repoquery --installed --queryformat='%{evr}.%{arch}' "kernel${KERNEL_SUFFIX:+-${KERNEL_SUFFIX}}")"
+/usr/bin/dracut --no-hostonly --kver "$QUALIFIED_KERNEL" --reproducible --zstd -v --add ostree --add fido2 -f "/usr/lib/modules/$QUALIFIED_KERNEL/initramfs.img"
