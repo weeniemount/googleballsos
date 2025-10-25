@@ -1,0 +1,19 @@
+{
+    "KPackageStructure": "Plasma/Applet",
+    "KPlugin": {
+        "Authors": [
+            {
+                "Email": "weeniemount@gmail.com",
+                "Name": "weenie"
+            }
+        ],
+        "Category": "Graphics",
+        "Description": "Le dancing la h",
+        "Id": "com.weenie.h",
+        "Name": "Dancing H",
+        "Version": "1.0.0",
+        "Website": "https://github.com/weeniemount/weenos"
+    },
+    "X-Plasma-API": "declarativeappletscript",
+    "X-Plasma-API-Minimum-Version": "6.0"
+}
