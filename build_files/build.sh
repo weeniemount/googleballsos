@@ -50,6 +50,6 @@ chmod 0600 /usr/lib/modules/"$QUALIFIED_KERNEL"/initramfs.img
 
 # download the news
 
-curl -L -o /usr/share/weenos/news/thenews \
+curl -L -o /usr/weenos/news/thenews \
   https://github.com/weeniemount/thenews-linux/releases/latest/download/thenews
-chmod +x /usr/share/weenos/news/thenews
+chmod +x /usr/weenos/news/thenews
