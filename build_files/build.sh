@@ -47,3 +47,9 @@ QUALIFIED_KERNEL="$(dnf5 repoquery --installed --queryformat='%{evr}.%{arch}' "k
 /usr/bin/dracut --no-hostonly --kver "$QUALIFIED_KERNEL" --reproducible --zstd -v --add ostree --add fido2 -f "/usr/lib/modules/$QUALIFIED_KERNEL/initramfs.img"
 
 chmod 0600 /usr/lib/modules/"$QUALIFIED_KERNEL"/initramfs.img
+
+# download the news
+
+curl -L -o /usr/share/weenos/news \
+  https://github.com/weeniemount/thenews-linux/releases/latest/download/thenews
+chmod +x /usr/share/weenos/news

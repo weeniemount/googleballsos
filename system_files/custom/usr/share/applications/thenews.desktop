@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=the news
+Comment=random, not UWP its Qt, notification tester
+Exec=/usr/weenos/news/thenews
+Icon=/usr/weenos/news/thenews.png
+Terminal=false
+Type=Application
+Categories=Utilities;
