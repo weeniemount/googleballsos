@@ -11,8 +11,13 @@ cursor_pack_pngs/ isnt built into weenOS, its just a place where i can put the p
 
 # credits
 kde plasma made by the, well, kde plasma devs
+
 fedora also made by the fedoa devs
+
 ublue for making it possible to make my funny os
+
 gradient man for making the gradlin cursors
+
 wilversings for making the kde maxwell widget that i clone into weenOS during build time
+
 https://www.gnome-look.org/p/2112595 for being the base of the custom plymouth theme
