@@ -11,3 +11,4 @@ org.kde.kpat
 uk.org.greenend.chiark.sgtatham.puzzles
 net.sourceforge.ExtremeTuxRacer
 org.kde.kapman
+io.github.trackballs.Trackballs
