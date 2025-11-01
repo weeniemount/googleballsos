@@ -1,0 +1,12 @@
+{
+    "KPlugin": {
+        "Authors": [
+            {
+                "Email": "weeniemount@gmail.com",
+                "Name": "weenie"
+            }
+        ],
+        "Id": "weenOS",
+        "Name": "weenOS"
+    }
+}
